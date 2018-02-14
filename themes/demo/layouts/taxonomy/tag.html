@@ -1,0 +1,10 @@
+<h2>tag : {{ .Title }}</h2>
+{{ range .Data.Pages }}
+<li>
+    <a href="{{ .Permalink }}">
+        title: {{ .Title }}
+        <br/>
+        url: {{ .Permalink }}
+    </a>
+</li>
+{{ end }}
